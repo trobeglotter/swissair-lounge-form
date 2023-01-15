@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 100px;
+            padding: 0;
+        }
+
+        #doc {
+            width: 710px;
+            height: 950px;
+            border: solid black 1px;
+            /* display: flexbox; */
+        }
+
+        .largeText {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            display: flexbox;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #swlogo {
+            width: 30%;
+            /* justify-content: flex-end; */
+        }
+
+        #qrcode {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="doc"></div>
+    <div id="doc-clone">xxxxxx</div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
